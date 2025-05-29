@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --Azul-Escuro: #2b2d42ff;
+    --Cinza: #8d99aeff;
+    --Branco: #edf2f4ff;
+    --Vermelho-Claro: #ef233c;
+    --Vermelho-Escuro: #d90429ff;
+    --Preto: #000000;
+    --fonte-primeria:"Anton", sans-serif;
+    --fonte-secundaria:"Cabin", sans-serif;
+}
