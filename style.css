@@ -1,18 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     font-weight: 400;
 }
-
 :root{
-    --Azul-Escuro: #2b2d42ff;
-    --Cinza: #8d99aeff;
-    --Branco: #edf2f4ff;
-    --Vermelho-Claro: #ef233c;
-    --Vermelho-Escuro: #d90429ff;
-    --Preto: #000000;
-    --fonte-primeria:"Anton", sans-serif;
-    --fonte-secundaria:"Cabin", sans-serif;
+    --preto:rgb(0, 0, 0);
+    --vermelho: rgb(226, 46, 46);
+    --cinza: #bfc0c0ff;
+    --azul: rgb(4, 0, 255);
+    --fonte-primaria: "Exile", system-ui;
+    --fonte-secundaria: "DM Sans", sans-serif;
+}
+body{
+    background-color: var(--preto);
+    color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: var(--fonte-secundaria);
+}
+.caixa-principal{
+    background-color: var(--vermelho);
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+.titulo{
+    font-family: var(--fonte-primaria);
 }
