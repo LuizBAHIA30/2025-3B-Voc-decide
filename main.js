@@ -6,66 +6,62 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Você é um prefeito influente de umma cidade do Brasil e que trabalha constantemente para a melhora da sosiedade, um dia de forma anonima um deputado oferece uma grande recompensa para ajuda-lo num golpe, você o ajuda?",
+        
         alternativas: [
             {
-                texto: "alternativa 1",
-                afirmacao: "resultado 1"
+                texto: "Você aceita",
+                afirmacao: "Apos aceitar ele fica muito feliz com sua participação e voce ganha uma bolada em dinheiro vivo e sai para comemorar em casa."
             },
             {
-                texto: "alternativa 2",
-                afirmacao: "resultado 2"
+                texto: "Você recussa",
+                afirmacao: "Apos recussar isso ele sai bravo da sua sala, voce termina seu trabalho e vai para casa."
             }
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Passado um tempo desde o ultimo ocorrido voce decide fazer faculdade sobre finanças e contagem, apos ums aulas vc repara em um furo no golpe do deputado o que voce faz? ",
         alternativas: [
             {
-                texto: "alternativa 3",
-                afirmacao: "resultado 3"
+                texto: "Você avisa para o deputado?",
+                afirmacao: "depois de um tempo você decide ajuda ele depois dos seus estudos na faculdade e ele tem mais confianca confianca em você."
             },
             {
-                texto: "alternativa 4",
-                afirmacao: "resultado 4"
+                texto: "Você avisa a policia?",
+                afirmacao: "depois de um tempo você ajuda a policia coim um caso e golpe que ela esta tentando solucionar e eles agradece a sua ajuda e diz tentar resolver ao maximo esse caso."
             }
         ]
     },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "Apos um tempo chega a epoca das eleicões e a policia esta mais perto de descobrir o golpe por conta da sua insistencia nas investigações, o Deputado reaparece pedindo sua ajudda uma ultima vez, o que você faz?",
         alternativas: [
             {
-                texto: "alternativa 5",
-                afirmacao: "resultado 5"
+                texto: "Tenta ajuda-lo",
+                afirmacao: "apos isso você ajudar ele e chegar o dia do golpe a policia descobre toda a armação e a sua participação, você e o deputado são detidos e estão dividindo uma cela e esperando o julgamento."
             },
             {
-                texto: "alternativa 6",
-                afirmacao: "resultado 6"
+                texto: "você ajuda a policia",
+                afirmacao: "depois um tempo e muita insistencia você percebe o que é ceto a se fazer e não ajuda no seu plano, ele é pego pelas autoridades e mesmo ele tentando te incriminar junto com ele a sua colaboracão com a policia mostyra o contrario e você segue sua vida feliz."
             }
         ]
     },
-    {
-        enunciado: "Pergunta 4",
-        alternativas: [
-            {
-                texto: "alternativa 07",
-                afirmacao: "resultado 07"
-            },
-            {
-                texto: "alternativa 08",
-                afirmacao: "resultado 08"
-            }
+
         ]
-    }
-]
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
+
 function mostraPergunta(){
+    if(atual >= perguntas.length){
+        mostreResultado();
+        return;
+    }
     perguntaAtual = perguntas[atual]
     caixaPerguntas.textContent = perguntaAtual.enunciado
-    mostraAlternativas()
+    caixaAlternativas.textContent= ""
+    mostraAlternativas();
 }
+
 function mostraAlternativas(){
     for( const alternativa of perguntaAtual.alternativas ){
         const botaoAlternativa = document.createElement("button");
@@ -74,9 +70,20 @@ function mostraAlternativas(){
         caixaAlternativas.appendChild(botaoAlternativa);
     }
 }
+
 function respostaSelecionada(opcaoSelecionada){
+    const afirmacao = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacao + " "
     atual++
     mostraPergunta();
 }
+
+function mostreResultado(){
+    caixaPerguntas.textContent = " Como termina a sua historia... ";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
 mostraPergunta();
+
 console.log(perguntas)
