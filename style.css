@@ -8,7 +8,7 @@
     --preto:rgb(0, 0, 0);
     --vermelho: rgb(226, 46, 46);
     --cinza: #bfc0c0ff;
-    --azul: rgb(4, 0, 255);
+    --vermelho-escuro: rgb(102, 7, 7);
     --fonte-primaria: "Exile", system-ui;
     --fonte-secundaria: "DM Sans", sans-serif;
 }
@@ -29,4 +29,17 @@ body{
 }
 .titulo{
     font-family: var(--fonte-primaria);
+}
+button{
+    padding: 20px 30px;
+    background-color: var(--vermelho-escuro);
+    color: var(--preto);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px;
+}
+button:hover{
+    background-color: var(--cinza);
 }
