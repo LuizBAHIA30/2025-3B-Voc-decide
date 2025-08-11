@@ -6,16 +6,16 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você é um prefeito influente de umma cidade do Brasil e que trabalha constantemente para a melhora da sosiedade, um dia de forma anonima um deputado oferece uma grande recompensa para ajuda-lo num golpe, você o ajuda?",
+        enunciado: "Você é um prefeito influente de uma cidade do Brasil e que trabalha constantemente para a melhora da sociedade, um dia de forma anonima um deputado oferece uma grande recompensa para ajuda-lo num golpe, você o ajuda?",
         
         alternativas: [
             {
                 texto: "Você aceita",
-                afirmacao: "Apos aceitar ele fica muito feliz com sua participação e voce ganha uma bolada em dinheiro vivo e sai para comemorar em casa."
+                afirmacao: "Apos aceitar ele fica muito feliz com sua participação, voce ganha uma bolada em dinheiro vivo e sai para comemorar em casa."
             },
             {
                 texto: "Você recussa",
-                afirmacao: "Apos recussar isso ele sai bravo da sua sala, voce termina seu trabalho e vai para casa."
+                afirmacao: "Apos recussar, ele desliga a ligacão e voce termina seu trabalho e vai para casa."
             }
         ]
     },
@@ -24,24 +24,24 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Você avisa para o deputado?",
-                afirmacao: "depois de um tempo você decide ajuda ele depois dos seus estudos na faculdade e ele tem mais confianca confianca em você."
+                afirmacao: "Depois de uns messes, com seus estudos na faculdade você decide ajudar ele com seu plano e ganha uma reconpensa por isso."
             },
             {
                 texto: "Você avisa a policia?",
-                afirmacao: "depois de um tempo você ajuda a policia coim um caso e golpe que ela esta tentando solucionar e eles agradece a sua ajuda e diz tentar resolver ao maximo esse caso."
+                afirmacao: "depois de um tempo você ajuda a policia com o caso de golpe que estão tentando solucionar, eles agradecem a sua ajuda e diz tentar resolver ao maximo esse caso."
             }
         ]
     },
     {
-        enunciado: "Apos um tempo chega a epoca das eleicões e a policia esta mais perto de descobrir o golpe por conta da sua insistencia nas investigações, o Deputado reaparece pedindo sua ajudda uma ultima vez, o que você faz?",
+        enunciado: "Apos mais um tempo chega a epoca das eleicões a policia esta mais perto de descobrir o golpe por conta da sua insistencia nas investigações, o Deputado reaparece pedindo sua ajudda uma ultima vez, o que você faz?",
         alternativas: [
             {
                 texto: "Tenta ajuda-lo",
-                afirmacao: "apos isso você ajudar ele e chegar o dia do golpe a policia descobre toda a armação e a sua participação, você e o deputado são detidos e estão dividindo uma cela e esperando o julgamento."
+                afirmacao: "Apos isso você decide ajudar-lo e chegar o dia do golpe a policia descobre toda a armação e a sua participação, você e o deputado são detidos e estão dividindo uma cela e esperando o julgamento."
             },
             {
                 texto: "você ajuda a policia",
-                afirmacao: "depois um tempo e muita insistencia você percebe o que é ceto a se fazer e não ajuda no seu plano, ele é pego pelas autoridades e mesmo ele tentando te incriminar junto com ele a sua colaboracão com a policia mostyra o contrario e você segue sua vida feliz."
+                afirmacao: "Apos mais um tempo chega o dia das eleições e você percebe o que é certo a se fazer é não ajuda-lo no seu plano, ele é pego pelas autoridades e mesmo ele tentando te incriminar junto com ele a sua colaboracão com a policia mostra o contrario e você segue sua vida feliz."
             }
         ]
     },
